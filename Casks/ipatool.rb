@@ -1,8 +1,8 @@
 cask "ipatool" do
-  version "1.0.3"
-  sha256 "0caec00b7b62c36c2916b256d999e0c52ca45d5f18c38fbe800e3289523f6d97"
+  version "1.0.4"
+  sha256 "c9f55a36fee2e9df024d7d2ba01293f62340616f77279d929e43a350a78ee002"
 
-  url "https://github.com/majd/ipatool/releases/download/v#{version}/ipatool"
+  url "https://github.com/majd/ipatool/releases/download/v#{version}/ipatool-v#{version}.zip"
   name "IPATool"
   desc "CLI tool for searching and downloading iOS app packages from the App Store"
   homepage "https://github.com/majd/ipatool"
