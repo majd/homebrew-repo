@@ -1,6 +1,6 @@
 cask "ipatool" do
-  version "1.1.0"
-  sha256 "2f024aebfe6ba035eadbaac89ddf6f9373313b1cc99af7a2818e06fa63d136f5"
+  version "1.1.1"
+  sha256 "7da9338fcc2ca8bece6fa6c5496e6e92bc54a2870c33534250e4d77351c33dd9"
 
   url "https://github.com/majd/ipatool/releases/download/v#{version}/ipatool-v#{version}.zip"
   name "IPATool"
