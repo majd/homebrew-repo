@@ -7,7 +7,7 @@ class ClassDump < Formula
   head "https://github.com/nygard/class-dump.git", branch: "master"
 
   depends_on xcode: :build
-  depends_on macos: :yosemite
+  depends_on macos: :el_capitan
 
   def install
     inreplace "Source/CDLCBuildVersion.m", /PLATFORM_IOSMAC/, "PLATFORM_MACCATALYST"
