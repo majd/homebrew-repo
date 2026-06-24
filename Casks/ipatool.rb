@@ -14,7 +14,7 @@ cask "ipatool" do
   desc "CLI tool for searching and downloading iOS app packages from the App Store"
   homepage "https://github.com/majd/ipatool"
 
-  depends_on macos: ">= :catalina"
+  depends_on macos: :catalina
 
   postflight do
     system "xattr", "-d", "com.apple.quarantine", "#{HOMEBREW_PREFIX}/bin/ipatool"
