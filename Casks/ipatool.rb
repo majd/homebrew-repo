@@ -14,7 +14,9 @@ cask "ipatool" do
   desc "CLI tool for searching and downloading iOS app packages from the App Store"
   homepage "https://github.com/majd/ipatool"
 
-  postflight do
-    system "xattr", "-d", "com.apple.quarantine", "#{HOMEBREW_PREFIX}/bin/ipatool"
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args:         ["-d", "com.apple.quarantine", "{{HOMEBREW_PREFIX}}/bin/ipatool"],
+        must_succeed: false
   end
 end
