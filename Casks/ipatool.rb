@@ -1,15 +1,15 @@
 cask "ipatool" do
   if Hardware::CPU.arm?
-    sha256 "5ae100d4520cf4b3f4374239e5925a9ad9a8dc02abc16bae27479e7ae99aca33"
-    url "https://github.com/majd/ipatool/releases/download/v2.7.0/ipatool-2.7.0-macos-arm64.tar.gz"
-    binary "bin/ipatool-2.7.0-macos-arm64", target: "ipatool"
+    sha256 "7c8477d92ba2b686de3234048beb9126e4774cfa36fd43b4c14ec389b8a13a84"
+    url "https://github.com/majd/ipatool/releases/download/v2.8.0/ipatool-2.8.0-macos-arm64.tar.gz"
+    binary "bin/ipatool-2.8.0-macos-arm64", target: "ipatool"
   else
-    sha256 "05f48994d8b3cfefe7ea1172a0ac0b28715888e9df0af38cf3e490d2ed592263"
-    url "https://github.com/majd/ipatool/releases/download/v2.7.0/ipatool-2.7.0-macos-amd64.tar.gz"
-    binary "bin/ipatool-2.7.0-macos-amd64", target: "ipatool"
+    sha256 "4e5e0b9b54a041a4c9fc90de6f8f69a36bda9c5a69a772ecc1a577c1dcb237cc"
+    url "https://github.com/majd/ipatool/releases/download/v2.8.0/ipatool-2.8.0-macos-amd64.tar.gz"
+    binary "bin/ipatool-2.8.0-macos-amd64", target: "ipatool"
   end
 
-  version "2.7.0"
+  version "2.8.0"
   name "IPATool"
   desc "CLI tool for searching and downloading iOS app packages from the App Store"
   homepage "https://github.com/majd/ipatool"
